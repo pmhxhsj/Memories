@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.loginContainer {
+  list-style: none;
+  border: solid 1px black;
+  padding: 50px;
+}
+
+.loginContainer li button {
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  font-family: 'Dongle', sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.login {
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+}

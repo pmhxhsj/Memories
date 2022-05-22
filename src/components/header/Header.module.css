@@ -15,3 +15,24 @@
   font-family: 'Dongle', sans-serif;
   font-size: 50px;
 }
+
+.darkMode {
+  flex: 1;
+}
+
+.mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+}
+
+.logoutBtn {
+  flex: 1;
+  margin-right: 20px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
