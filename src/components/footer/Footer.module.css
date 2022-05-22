@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer span:first-child {
+  cursor: pointer;
+}
