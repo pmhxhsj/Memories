@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
+import styles from './Login.module.css';
 
 const Login = ({ authService }) => {
   const onLogin = (event) => {
@@ -9,10 +10,10 @@ const Login = ({ authService }) => {
   return (
     <div>
       <section>
-        <Header />
-        <section>
-          <h1>Login</h1>
-          <ul>
+        <Header className={styles.header} />
+        <section className={styles.container}>
+          <h1 className={styles.title}>Login</h1>
+          <ul className={styles.loginContainer}>
             <li>
               <button onClick={onLogin}>Google</button>
             </li>
@@ -21,7 +22,7 @@ const Login = ({ authService }) => {
             </li>
           </ul>
         </section>
-        <Footer />
+        <Footer className={styles.footer} />
       </section>
     </div>
   );

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logoImg {
+  margin-right: 10px;
+}
+
+.title {
+  font-family: 'Dongle', sans-serif;
+  font-size: 50px;
+}
