@@ -1,9 +1,10 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 import styles from './Footer.module.css';
 
 const Footer = (props) => {
   const emailClick = () => {
-    alert('pmhxxhsj@gmail.com');
+    Swal.fire('pmhxxhsj@gmail.com');
   };
   return (
     <footer className={styles.footer}>
