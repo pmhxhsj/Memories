@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 
-const Header = ({ onLogout }) => {
-  // onLogout = true;
+const Header = ({ onLogout, authService }) => {
+  const navigate = useNavigate();
+
+  const goToLoginPage = () => {
+    authService.logout();
+    navigate('/');
+  };
+
   return (
     <header className={styles.container}>
       <div className={styles.darkMode}></div>
@@ -11,7 +18,7 @@ const Header = ({ onLogout }) => {
         <h1 className={styles.title}>Memories</h1>
       </div>
       {onLogout ? (
-        <button className={styles.logoutBtn} onClick={onLogout}>
+        <button className={styles.logoutBtn} onClick={goToLoginPage}>
           Logout
         </button>
       ) : (
